@@ -1,0 +1,13 @@
+.container {
+  max-width: 1000px;
+}
+
+#ajeitar {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0 150px;
+}
+#centralizar { 
+  margin-top: 40px;
+
+}
