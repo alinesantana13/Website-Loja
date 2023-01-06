@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Finalizar compra</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <script>
+      /*Desbilida clicar com o botão direito do mouse*/
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      h2 {
+        margin-top: 50px;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="compra-form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <!--Barra de Navegação-->
+<header>
+  
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Clothing </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="تبديل التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Minha conta
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="cadastro.html">Cadastro</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html#feminino">Feminino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#infantil">Infantil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#falec">Fale conosco</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="pesquisa" aria-label="بحث">
+          <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Fim da barra-->
+
+<!--Bloco de preencher informações para pagamento-->
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Finalizar compra</h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Seu carrinho</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Nome do produto</h6>
+              <small class="text-muted">Descrição</small>
+            </div>
+            <span class="text-muted">R$</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Segundo produto</h6>
+              <small class="text-muted">Descrição</small>
+            </div>
+            <span class="text-muted">R$</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">CUPOM</h6>
+            </div>
+            <span class="text-success">-R$</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (R$)</span>
+            <strong></strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="código">
+            <button type="submit" class="btn btn-secondary">Aplicar</button>
+          </div>
+        </form>
+      </div>
+      <!--Pagamento-->
+      <div class="col-md-7 col-lg-8">
+        <form class="needs-validation" novalidate action="https://formspree.io/f/xlekrpaj" method="post">
+          <div class="row g-3">
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Pagamento</h4>
+          <!--Caica check-->
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="Forma de pagamento" value="Cartão de crédito " type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Cartão de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="Forma de pagamento" value="Cartão de débito" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Cartão de débito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="Forma de pagamento" value="PayPal" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+            <div class="form-check">
+              <input id="pix" name="Forma de pagamento" value="Pix" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="pix">Pix</label>
+            </div>
+          </div>
+          <!--Fim da caixa-->
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nome no cartão</label>
+              <input type="text" name="Nome no cartão" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nome completo conforme exibido no cartão</small>
+              <div class="invalid-feedback">
+              O nome no cartão é obrigatório
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número do Cartão de Crédito</label>
+              <input type="number" name="Número do cartão" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                O número do cartão de crédito é obrigatório
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Validade</label>
+              <input type="number" name="Validade" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Data de expiração necessária
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="number" name="CVV" class="form-control" maxlength="3" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Código de segurança necessário
+              </div>
+            </div>
+            <hr class="my-4">
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address" name="O endereço de entrega é o mesmo do meu endereço de cobrança" value="Sim">
+              <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo do meu endereço de cobrança</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info" name="Salve esta informação para a próxima vez" value="Sim">
+              <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
+            </div>
+          </div>
+          <!--Fim do pagamento-->
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit" onClick="pagar()">Finalizar compra</button>
+        </form>
+      </div>
+    </div>
+  </main>
+<!--Rodapé-->
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022 Companhia Clothing</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidade</a></li>
+      <li class="list-inline-item"><a href="#">Termos</a></li>
+      <li class="list-inline-item"><a href="#">Suporte</a></li>
+    </ul>
+  </footer>
+<!--Fim do Rodapé-->
+</div>
+
+      <script src="compra-form-validation.js"></script>
+  </body>
+</html>
