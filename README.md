@@ -3,7 +3,7 @@
 
 
 
-- Atualmente estou trabalhando em [Website-Loja](https://alinesantana13.github.io/Website-Loja 🔭/)
+- Atualmente estou trabalhando em um Website de uma loja de venda denominada <a href="https://alinesantana13.github.io/Website-Loja">Clothing</a>🔭
 <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50%">
 
 
