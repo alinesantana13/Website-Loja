@@ -1,8 +1,8 @@
 <h1 align="center">Bem-vindo(a)! Meu nome é Aline</h1>
-<h3 align="center">Sou uma desenvolvedora front-end</h3>
+<h3 align="center">Sou uma desenvolvedora full stack</h3>
 
 
-- Atualmente estou trabalhando em um Website de uma loja de venda denominada <a href="https://alinesantana13.github.io/Website-Loja">Clothing</a>🔭
+- Website de uma loja <a href="https://alinesantana13.github.io/Website-Loja">Clothing</a>🔭
  <p align="center"> 
 <img src="./tela1.png" width="50%">
 </p>
