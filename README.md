@@ -25,7 +25,5 @@
 
 <h3 align="left">Conecte-se comigo:</h3>
 <p align="center">
- <a href="https://www.linkedin.com/in/aline-santana-88115a188/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="https://www.linkedin.com/in/aline-santana-88115a188/" height="30" width="40" /></a>
- <a href="https://instagram.com/aline_santana7" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@aline_santana7" height=" 30" width="40" /></a></p>
-
-<img src="https://komarev.com/ghpvc/?username=alinesantana13&label=Profile%20views&color=0e75b6&style=flat" alt="alinesantana13" /> </p>
+ <a href="https://www.linkedin.com/in/aline-santana-88115a188/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="https://www.linkedin.com/in/aline-santana-silva/" height="30" width="40" /></a>
+ </p>
